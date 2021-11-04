@@ -3,16 +3,25 @@
   margin: 0;
 }
 
+ul {
+  padding-left: 0;
+}
+
 .app {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* background: url("https://info.ehl.edu/hubfs/Blog-EHL-Insights/Blog-Header-EHL-Insights/invest%20-education.jpg");
+  background-size: cover; */
 }
 
 .video-list-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0 20px;
+  padding-right: 150px;
 }
 
 .quiz-type-container {
@@ -31,30 +40,51 @@
 .lesson-list-container {
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 }
 
-.lesson-list-container .btnGoToLesson {
-  width: 6rem;
-  height: 4rem;
-  background-color: rgb(154, 154, 219);
-  margin: 0.5rem 1rem;
-}
-
-.lesson-list-container .btnGoToLesson a {
+.lesson-list-container .lession-list {
   text-decoration: none;
   color: rgb(255, 106, 135);
   font-size: 16px;
+  list-style: none;
+  margin-bottom: 20px;
 }
 
-.session-list-container {
+.lesson-list-container .lession-list .session-list {
+  /* display: none; */
+  position: relative;
+  list-style: none;
+}
+
+.lesson-list-container .lession-list .session-list li:nth-child(1) {
+  margin-top: 1rem;
+}
+
+.user-option-list {
   display: flex;
-  flex-direction: column;
 }
 
-.session-list-container .btnGoToSession {
-  width: 6rem;
-  height: 4rem;
-  margin: 0.5rem 1rem;
+.user-option-item {
+  margin-right: 2rem;
+  list-style: none;
+  border: none;
+  text-decoration: underline 0.25em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+
+.user-option-item:hover {
+  cursor: pointer;
+  text-decoration-color: rgb(189, 144, 144);
+}
+
+li.lession-list > h3 {
+  padding: 10px;
   background-color: rgb(154, 154, 219);
-  color: rgb(255, 106, 135);
+  border: 1px solid #333;
+  border-radius: 10px;
+}
+
+li.lession-list > h3:hover {
+  cursor: pointer;
 }

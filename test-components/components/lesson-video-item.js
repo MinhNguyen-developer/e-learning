@@ -1,0 +1,3 @@
+class VideoLessonItem {}
+
+export { VideoLessonItem };
